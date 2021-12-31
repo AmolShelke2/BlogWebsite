@@ -19,6 +19,9 @@ html {
 
 body {
   background: url(assets/w3codes.png);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
   width: 100vw;
   font-family: var(--main-font);
   color: #fff;
@@ -68,7 +71,7 @@ header {
 
 .nav-ul a:hover {
   text-decoration: underline;
-  color: #fff;
+  color: darksalmon;
 }
 
 .technologies {
