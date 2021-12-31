@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pushster&display=swap");
+
+:root {
+  --main-font: "Ubuntu", sans-serif;
+  --second-font: "Pushster", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: -moz-hidden-unscrollable;
+}
+
+body {
+  background: url(assets/w3codes.png);
+  width: 100vw;
+  font-family: var(--main-font);
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+.icon {
+  padding: 20px;
+  margin-left: 20px;
+  font-family: var(--second-font);
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 25px;
+}
+
+.nav-ul ul {
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.nav-ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.nav-ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-ul a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.technologies {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-logo img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 3rem;
+}
+
+.technologies h3 {
+  margin: 1rem 0;
+  line-height: 60px;
+  font-family: var(--second-font);
+}
+
+.technologies ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.technologies li {
+  padding: 20px;
+  list-style-type: none;
+  font-size: 4rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
+
+section h1 {
+  font-weight: bold;
+  font-family: var(--second-font);
+  line-height: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+section p {
+  line-height: 2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .icon h4 {
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .technologies h3 {
+    line-height: 40px;
+    padding: 10px 20px;
+  }
+
+  .img-logo img {
+    width: 400px;
+  }
+
+  .technologies i {
+    font-size: 50px;
+  }
+  .nav-ul ul {
+    flex-direction: column;
+    width: 100%;
+  }
+}
