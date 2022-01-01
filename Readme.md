@@ -11,8 +11,12 @@ Hey everyone today I create a Blog website especially for new beginners who want
 
 ## More about this project
 
--[My Blog] (https://blog-website-omega.vercel.app/)
+-[My Blog](https://blog-website-omega.vercel.app/)
 
 ## Creator
 
--[]
+-[AmolShelke2](https://github.com/AmolShelke2)
+
+## Who I am
+
+I am a Student Currently Learning Front end development and Front end Enthusiast💕
