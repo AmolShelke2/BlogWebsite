@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pushster&display=swap");
 
 :root {
   --main-font: "Ubuntu", sans-serif;
   --second-font: "Pushster", sans-serif;
+  --third-font: "Pacifico", sans-serif;
 }
 
 html {
@@ -14,14 +16,11 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: -moz-hidden-unscrollable;
 }
 
 body {
   background: url(assets/w3codes.png);
-  background-size: cover;
   background-position: center;
-  backdrop-filter: blur(10px);
   width: 100vw;
   font-family: var(--main-font);
   color: #fff;
@@ -131,7 +130,93 @@ section p {
   font-size: 20px;
 }
 
+.confuse-between-resources {
+  text-align: center;
+}
+
+.confuse-between-resources img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  font-family: var(--second-font);
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.resources {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+.freecodecamp,
+.w3schools,
+.udemy,
+.youtube {
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.322);
+  border-radius: 10px;
+}
+
+.freecodecamp p,
+.w3schools p,
+.udemy p,
+.youtube p {
+  margin-bottom: 40px;
+}
+
+.resources h2 {
+  font-family: var(--third-font);
+  text-decoration: underline;
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.resources h4 {
+  font-family: var(--third-font);
+  font-size: 19px;
+  padding: 10px;
+}
+.resources p {
+  font-family: var(--main-font);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 19px;
+}
+
+.resources a {
+  background-color: rgb(85, 55, 85);
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--third-font);
+}
+
+.resources a:hover {
+  background-color: darksalmon;
+}
+
 @media only screen and (max-width: 700px) {
+  .nav-ul ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .technologies {
+    text-align: center;
+  }
+
   .icon h4 {
     text-align: center;
     position: absolute;
@@ -151,8 +236,43 @@ section p {
   .technologies i {
     font-size: 50px;
   }
-  .nav-ul ul {
+
+  .resources {
     flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    font-size: 10px;
+    padding: 20px;
+  }
+
+  .resources h2 {
+    font-size: 20px;
+  }
+
+  .resources p {
+    line-height: 2;
+  }
+
+  img {
+    text-align: center;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main {
+    text-align: center;
+  }
+
+  .img-logo img {
+    text-align: center;
+    width: 300px;
+  }
+
+  .nav-ul ul {
+    display: flex;
+    flex-direction: column;
   }
 }
