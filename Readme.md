@@ -22,9 +22,4 @@ Hey everyone today I create a Blog website especially for new beginners who want
 ## Who I am
 
 I am a Student Currently Learning Front end development and Front end Enthusiast💕
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> 1d925b80bae4b1e5bc56c053b0788291a882832e
